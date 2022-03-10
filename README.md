@@ -23,6 +23,19 @@ docker-compose down
 账号 root
 密码 123456
 ```
+# mysql 远程连接(进入容器创建账号)
+```
+CREATE USER 'test'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
+GRANT ALL PRIVILEGES ON *.* TO 'test'@'%';
+FLUSH PRIVILEGES;
+地址 127.0.0.1
+端口 3306
+账号 test
+密码 123456
+```
+
+
+
 ### 如果服务器部署在线上服务器
 #### 地址换成线上 ip 地址
 #### 服务器记得开启 3306的限制
