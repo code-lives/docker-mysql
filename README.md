@@ -23,7 +23,7 @@ FLUSH PRIVILEGES;
 ```
 # 数据库导入问题
 
-###### 导入遇到 数据库字段类型【timestamp】默认值 CURRENT_TIMESTAMP datetime value: '0000-00-00 00:00:00'
+######  数据库字段类型【timestamp】默认值 CURRENT_TIMESTAMP 出现：datetime value: '0000-00-00 00:00:00'
 1. 查询
 ```
 SHOW VARIABLES LIKE 'sql_mode%';
